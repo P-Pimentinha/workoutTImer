@@ -14,9 +14,9 @@ function timerInt() {
 }
 
 function timer() {
-  if (initialTime === 0) return;
-
+  if (initialTime === 0) return startButton.removeAttribute('disabled', '');
   initialTime--;
+  startButton.setAttribute('disabled', '');
   // prettier-ignore
   return counter.innerHTML = initialTime;
 }
