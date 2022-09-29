@@ -3,20 +3,24 @@ const startButton = document.querySelector('.btnStart');
 
 let initialTime = 45;
 
+console.log(location);
+
 startButton.addEventListener('click', timerInt);
 
 function timerInt() {
   if (initialTime === 0) {
     initialTime = 45;
   } else {
+    startButton.setAttribute('disabled', '');
     setInterval(timer, 1000);
   }
 }
 
 function timer() {
-  if (initialTime === 0) return startButton.removeAttribute('disabled', '');
+  if (initialTime === 0) return location.reload();
   initialTime--;
-  startButton.setAttribute('disabled', '');
   // prettier-ignore
   return counter.innerHTML = initialTime;
 }
+
+location.reload;
