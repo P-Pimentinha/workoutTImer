@@ -2,18 +2,12 @@ const counter = document.querySelector('.counter');
 const startButton = document.querySelector('.btnStart');
 
 let initialTime = 45;
-
-console.log(location);
-
+counter.innerHTML = initialTime;
 startButton.addEventListener('click', timerInt);
 
 function timerInt() {
-  if (initialTime === 0) {
-    initialTime = 45;
-  } else {
-    startButton.setAttribute('disabled', '');
-    setInterval(timer, 1000);
-  }
+  startButton.setAttribute('disabled', '');
+  setInterval(timer, 1000);
 }
 
 function timer() {
@@ -22,5 +16,3 @@ function timer() {
   // prettier-ignore
   return counter.innerHTML = initialTime;
 }
-
-location.reload;
