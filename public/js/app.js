@@ -7,8 +7,8 @@ startButton.addEventListener('click', timerInt);
 upButton.addEventListener('click', add);
 downButton.addEventListener('click', sub);
 
-let userTime = 5;
-let initialTime = 5;
+let userTime = 45;
+let initialTime = 45;
 counter.innerHTML = initialTime;
 let interval;
 
