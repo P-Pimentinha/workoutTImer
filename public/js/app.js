@@ -44,3 +44,7 @@ function sub() {
   userTime -= 1;
   counter.innerHTML = initialTime;
 }
+
+function test() {
+  console.log('HEllo');
+}
