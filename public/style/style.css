@@ -73,6 +73,10 @@
   text-transform: capitalize;
 }
 
+.disable {
+  opacity: 50%;
+}
+
 p {
   font-size: 75px;
   margin: 0 auto;

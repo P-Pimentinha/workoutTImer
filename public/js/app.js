@@ -24,13 +24,16 @@ let interval;
 // }
 
 function timerInt() {
+  startButton.classList.add('disable');
   startButton.setAttribute('disabled', '');
+
   interval = setInterval(timer, 1000);
 }
 
 function timer() {
   if (initialTime === 0) {
     // startButton.removeEventListener('click', timerInt);
+    startButton.classList.remove('disable');
     startButton.removeAttribute('disabled', '');
     clearInterval(interval);
     initialTime = userTime;
