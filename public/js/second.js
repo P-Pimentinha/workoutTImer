@@ -2,9 +2,6 @@ const counter = document.querySelector('.counter');
 const startButton = document.querySelector('.btnStart');
 const upButton = document.querySelector('.btnUp');
 const downButton = document.querySelector('.btnDown');
-const resOne = document.querySelector('.res45');
-const resTwo = document.querySelector('.res60');
-const resThree = document.querySelector('.res90');
 
 let timer;
 let interval;
@@ -65,28 +62,6 @@ function sub() {
   counter.innerHTML = timer;
 }
 
-function firstRes() {
-  timer = 45;
-  localStorage.setItem('timer', timer);
-  counter.innerHTML = timer;
-}
-
-function secondRes() {
-  timer = 60;
-  localStorage.setItem('timer', timer);
-  counter.innerHTML = timer;
-}
-
-function threeRes() {
-  timer = 90;
-  localStorage.setItem('timer', timer);
-  counter.innerHTML = timer;
-}
-
 startButton.addEventListener('click', initTimer);
 upButton.addEventListener('click', add);
 downButton.addEventListener('click', sub);
-
-resOne.addEventListener('click', firstRes);
-resTwo.addEventListener('click', secondRes);
-resThree.addEventListener('click', threeRes);
