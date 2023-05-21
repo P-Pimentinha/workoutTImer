@@ -8,6 +8,18 @@
   display: inline-block;
 }
 
+.alert {
+  width: 250px;
+  height: 70px;
+  background-color: rgb(136, 255, 0);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.alertY {
+  background-color: rgb(255, 0, 0);
+}
+
 .buttons {
   margin: 0 auto;
   text-align: center;

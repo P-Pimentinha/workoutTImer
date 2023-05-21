@@ -5,6 +5,7 @@ const downButton = document.querySelector('.btnDown');
 const resOne = document.querySelector('.res45');
 const resTwo = document.querySelector('.res60');
 const resThree = document.querySelector('.res90');
+const squareAlert = document.querySelector('.alert');
 
 let timer;
 let interval;
@@ -27,6 +28,7 @@ function initTimer() {
   upButton.setAttribute('disabled', '');
   downButton.classList.add('disable');
   downButton.setAttribute('disabled', '');
+  squareAlert.classList.add('alertY');
 
   interval = setInterval(timerFunc, 1000);
 }
@@ -39,6 +41,7 @@ function timerFunc() {
     upButton.removeAttribute('disabled', '');
     downButton.classList.remove('disable');
     downButton.removeAttribute('disabled', '');
+    squareAlert.classList.remove('alertY');
 
     clearInterval(interval);
     timer = localStorage.getItem('timer');
