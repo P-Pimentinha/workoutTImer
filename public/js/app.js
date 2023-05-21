@@ -6,22 +6,12 @@ const downButton = document.querySelector('.btnDown');
 // const textOne = document.getElementById('lunch');
 // const btn1 = document.getElementById('btnTest');
 
-startButton.addEventListener('click', timerInt);
-upButton.addEventListener('click', add);
-downButton.addEventListener('click', sub);
 // btn1.addEventListener('click', fun1);
 
 let userTime = 45;
 let initialTime = 45;
 counter.innerHTML = initialTime;
 let interval;
-
-// //new
-// function fun1() {
-//   initialTime = textOne.value;
-//   userTime = textOne.value;
-//   counter.innerHTML = initialTime;
-// }
 
 function timerInt() {
   startButton.classList.add('disable');
@@ -58,6 +48,6 @@ function sub() {
   counter.innerHTML = initialTime;
 }
 
-function test() {
-  console.log('HEllo');
-}
+startButton.addEventListener('click', timerInt);
+upButton.addEventListener('click', add);
+downButton.addEventListener('click', sub);
